@@ -38,6 +38,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 .container {
   width: 100%;
@@ -190,7 +191,7 @@ input {
 
 /* ----------------------SECTION_02----------------------- */
 .section-two {
-  padding: 96px 16px;
+  padding: 96px 0;
   /* padding: 96px 0; */
   /* padding: 120px 0; */
 }
@@ -280,25 +281,18 @@ input {
 /* ---------------------------------SECTION_04--------------------------------- */
 .section-four {
   background-color: var(--cloud-color);
-  /* padding: 120px 0; */
-  padding: 96px 108px;
+  padding: 96px 0;
 }
-.container-team {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 .members-list {
   display: flex;
   flex-wrap: wrap;
   /* gap: 24px; */
+  justify-content: center;
   gap: 72px;
 }
 .members-list-item {
   background-color: var(--white-color);
-  width: 100%;
+  width: 264px;
   /* width: calc((100% - 24px * 3) / 4); */
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -334,8 +328,9 @@ input {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-left: 16px;
-  padding-right: 16px;
+  align-items: center;
+  /* padding-left: 16px;
+  padding-right: 16px; */
 }
 .members-item {
   height: 40px;
@@ -361,17 +356,21 @@ input {
 }
 /* ----------------------------SECTION_05-------------------------------------- */
 .section-five {
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 .customers-list {
   display: flex;
-  gap: 24px;
-  justify-content: center;
+  /* gap: 24px; */
+  gap: 72px 16px;
+  /* justify-content: center; */
+  flex-wrap: wrap;
 }
 .customers-link-item {
   height: 88px;
-  width: 56px;
-  width: calc((100% - 120px) / 6);
+  /* width: 56px; */
+  /* width: calc((100% - 120px) / 6); */
+  width: calc((100% - 16px) / 2);
 }
 .customers-link {
   height: 100%;
