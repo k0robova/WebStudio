@@ -51,6 +51,8 @@ img {
 input {
   font-family: "Roboto", sans-serif;
 }
+
+/* Всюди поділити леттер спенсінг на фонт сайз, і переписати леттер спенсінг */
 /*---------------------------------Header--------------------------------*/
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -151,6 +153,113 @@ input {
 .header-menu-open {
   stroke: var(--navy-blue-color);
   background-color: var(--white-color);
+}
+.mob-menu {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  padding: 24px 24px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.close-menu-btn {
+  display: block;
+  margin-left: auto;
+  color: red;
+  /* color: var(--navy-blue-color); */
+  background-color: transparent;
+  border-color: var(--accent-color);
+  border: none;
+  border-radius: 24px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--navy-blue-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 32px;
+}
+.mob-container {
+  margin-top: auto;
+}
+.header-menu-close {
+}
+.mob-menu-list {
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mob-menu-link {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  color: var(--navy-blue-color);
+}
+.mob-current {
+  color: var(--primary-color);
+}
+.mob-menu-address {
+}
+.mob-menu-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.mob-menu-address-item {
+}
+.mob-menu-address-link-tel {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+}
+.mob-menu-address-link {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: var(--body-text-color);
+}
+.mob-media-list {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+.mob-item {
+  height: 40px;
+  width: 40px;
+}
+.mob-link {
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: background-color var(--transition);
+}
+.mob-media-icons {
+  fill: var(--cloud-color);
 }
 /* ------------------------Main-------------------------- */
 .section-one {
