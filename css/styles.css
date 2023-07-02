@@ -628,17 +628,20 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .footer-input {
 }
 .footer-form {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .footer-label {
-  max-width: 398px;
+  /* max-width: 398px; */
+  width: 100%;
 }
 .label-title {
   display: block;
@@ -656,7 +659,8 @@ input {
   gap: 16px;
 }
 .footer-input {
-  width: 264px;
+  /* width: 264px; */
+  width: 100%;
   height: 40px;
   border: 1px solid #ffffff;
   border-radius: 4px;

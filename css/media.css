@@ -119,11 +119,16 @@
     max-width: 584px;
     gap: 72px 24px;
   }
+  .footer-input {
+    width: 264px;
+  }
   .modal-footer {
     align-items: start;
+    width: unset;
   }
   .footer-form {
     flex-direction: row;
+    gap: 24px;
   }
   .footer-box {
     align-items: start;
@@ -229,5 +234,15 @@
   }
   .footer-icons-container {
     margin-right: 80px;
+  }
+  .footer-container {
+    flex-wrap: nowrap;
+    gap: unset;
+  }
+  .footer-label {
+    width: unset;
+  }
+  .icons-send {
+    margin-left: unset;
   }
 }
