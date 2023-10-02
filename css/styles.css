@@ -52,7 +52,6 @@ input {
   font-family: "Roboto", sans-serif;
 }
 
-/* Всюди поділити леттер спенсінг на фонт сайз, і переписати леттер спенсінг */
 /*---------------------------------Header--------------------------------*/
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -721,10 +720,17 @@ input {
   padding: 96px 0 120px 0;
 }
 .button-portfolio-list {
-  display: flex;
+  /* display: flex;
   gap: 24px;
   margin-bottom: 72px;
-  justify-content: center;
+  justify-content: center; */
+
+  display: flex;
+  margin-bottom: 72px;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 16px;
 }
 .button-portfolio {
   font-family: "Roboto", sans-serif;
@@ -758,7 +764,8 @@ input {
   row-gap: 48px;
 }
 .portfolio-item {
-  width: calc((100% - 48px) / 3);
+  /* width: calc((100% - 48px) / 3); */
+  width: 320px;
   background-color: var(--white-color);
 }
 
@@ -801,7 +808,8 @@ input {
 .portfolio-info {
   padding: 32px 16px;
   border: 1px solid var(--accent-color);
-  width: 360px;
+  /* width: 360px; */
+  width: 320px;
   border: 1px solid var(--accent-color);
   border-top: none;
   border: 1px solid #e7e9fc;

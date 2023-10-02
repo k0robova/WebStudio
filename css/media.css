@@ -15,6 +15,10 @@
   .made > .container {
     max-width: 294px;
   }
+  /* !!! ---------------------------MEDIA PORTFOLIO---------- */
+  /* .button-portfolio-list {
+    max-width: 320px;
+  } */
 }
 
 @media screen and (min-width: 768px) {
@@ -149,6 +153,19 @@
   .footer-subtitle {
     text-align: start;
   }
+
+  /* !!! ---------------------MEDIA PORTFOLIO TABLET---------------------- */
+  .portfolio-info {
+    width: 360px;
+  }
+  .portfolio-item {
+    width: calc((100% - 48px) / 2);
+  }
+  .button-portfolio-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -269,5 +286,10 @@
   }
   .icons-send {
     margin-left: unset;
+  }
+
+  /* !!! ---------------------MEDIA PORTFOLIO COMP---------------------- */
+  .portfolio-item {
+    width: calc((100% - 48px) / 3);
   }
 }
